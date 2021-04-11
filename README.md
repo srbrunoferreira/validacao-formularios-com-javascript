@@ -17,3 +17,13 @@
 2. DataValidator.js - responsável por validar os dados em si, pois possui as funções necessárias para tal.
 3. Notificator.js - responsável por exibir uma div contendo os inputs com dados inválidos.
 
+## Como funciona
+
+Para todo o script funcionar, é necessário ter todos os arquivos na mesma página .html.
+O método construtor recebe como parâmetro um botão que possui um atributo data-form contendo o id do formulário.
+O id é necessário para a classe Validator pegar os dados do formulário com a interface FormData.
+
+Assim, a classe Validator tem um método que corre por todos os inputs e valida cada um com o auxilio da classe DataValidator.
+
+Caso houver algum input inválido, o atributo _name_ desse input é armazenado numa variável da Validator. Essa variável é
+posteriormente passada à classe Notificator, que se encarrega de exibir a mensagem de erro respectiva para aquele input.
