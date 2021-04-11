@@ -47,7 +47,7 @@ class Validator {
   highlightInvalid() {
     this.invalidInputs.forEach(inputName => {
       let input = document.querySelector('#' + this.formId + " input[name='" + inputName + "']");
-      console.log('#' + this.formId + " input[type='" + inputName + "']");
+
       input.parentElement.classList.add('highlight-input');
       input.parentElement.setAttribute('onfocusout', "this.classList.remove('highlight-input')");
     });

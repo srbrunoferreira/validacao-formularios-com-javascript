@@ -4,7 +4,7 @@ class DataValidator {
 
   // Valida A-z e pontos.
   validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    return /^(?=^.{5,255}$)+(?!.*\.{2})+(?!.*\@{2})+[a-zA-Z]+[a-zA-Z0-9.]+@+[a-zA-Z]+.+[a-zA-Z]+$/.test(email);
   }
 
   validatePassword(password) {
@@ -14,7 +14,7 @@ class DataValidator {
   }
   
   validateString(string) {
-    return /^(?!.*\ {2})[a-z-A-Z0-9]+[a-zA-Z0-9"':.\-\,À-ú\r\n ]+[a-z-A-Z0-9.]$/.test(string);
+    return /^(?!.*\ {2})[a-z-A-Z0-9]+[a-zA-Z0-9"':\-\,À-ú\r\n ]+[a-z-A-Z0-9.]$/.test(string);
   }
 
   validateDate(date) {
