@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/default.css">
+  <title>Validação de formulários com JavaScript</title>
+
+  <meta name="title" content="Validação de formulários com JavaScript">
+  <meta name="description" content="Validação de formulários feita com JavaScript.">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Portuguese">
+  <meta name="theme-color" content="">
+  <link rel="canonical" href="">
+
+  <meta property="og:title" content="Validação de formulários com JavaScript">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="">
+
+  <meta name="twitter:title" content="Validação de formulários com JavaScript">
+  <meta name="twitter:description" content="Validação de formulários feita com JavaScript.">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bf13b1cfe9.js" crossorigin="anonymous"></script>
+
+  <script src="js/DataValidator.js"></script>
+  <script src="js/Notificator.js"></script>
+  <script src="js/Validator.js"></script>
+
+  <script>
+    window.onload = () => {
+      let loginForm = new Validator(document.getElementById('btn-login-form'));
+      let registerForm = new Validator(document.getElementById('btn-register-form'));
+    }
+  </script>
+  
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Validação de formulários com JavaScript</h1>
+
+    <form id="login-form" action="index.html" method="post">
+
+      <h2>Formulário de login</h2>
+
+      <div class="fields-container">
+        <fieldset>
+          <legend>E-mail</legend>
+          <input type="email" name="email" value="user@emailcom" placeholder="Digite seu e-mail aqui" maxlength="255" required>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Senha</legend>
+          <input type="password" name="password" value="12345678" placeholder="Digite sua senha aqui" maxlength="255" required>
+        </fieldset>
+      </div>
+
+      <div class="button-container">
+        <button id="btn-login-form" data-form="login-form" type="button">Entrar <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+    </form>
+
+    <form id="register-form" action="index.html" method="post">
+
+      <h2>Formulário de registro</h2>
+
+      <div class="fields-container">
+        <fieldset>
+          <legend>Nome</legend>
+          <input type="text" name="name" value="Mister M." placeholder="Digite seu nome aqui" maxlength="255" required>
+        </fieldset>
+  
+        <fieldset>
+          <legend>E-mail</legend>
+          <input type="email" name="email" value="user@email.com" placeholder="Digite seu e-mail aqui" maxlength="255" required>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Data de nascimento</legend>
+          <input type="date" name="date" value="2000-01-01" required>
+        </fieldset>
+  
+        <fieldset>
+          <legend>Senha</legend>
+          <input type="password" name="password" value="aA12345678" placeholder="Digite sua senha aqui" maxlength="255" required>
+        </fieldset>
+      </div>
+
+      <div class="button-container">
+        <button id="btn-register-form" data-form="register-form" type="button">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+
+    </form>
+
+  </main>
+
+</body>
+
+</html>
