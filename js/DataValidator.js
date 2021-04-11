@@ -4,7 +4,7 @@ class DataValidator {
 
   // Valida A-z e pontos.
   validateEmail(email) {
-    return /^(?=^.{5,255}$)+(?!.*\.{2})+(?!.*\@{2})+[a-zA-Z]+[a-zA-Z0-9.]+@+[a-zA-Z]+.+[a-zA-Z]+$/.test(email);
+    return /^(?=^.{5,255}$)+(?!.*\.{2})+(?!.*\@{2})+[a-zA-Z]+[a-zA-Z0-9.]+@+[a-zA-Z]+.+[.a-zA-Z]+$/.test(email);
   }
 
   validatePassword(password) {
