@@ -33,3 +33,5 @@ A interface desenvolvida aprenseta dois formulários: um de login e outro de reg
 negados pelo JavaScript e será exibida uma notificação com os campos incorretos, que terão a cor de suas bordas mudados para vermelho. O segundo apresenta dados corretos e será exibido um alert dizendo que a operação foi realizada com sucesso.
 
 Você também pode mudar os valores para testar mais o aplicativo (:
+
+![Interface](interface.jpg)
