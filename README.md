@@ -29,7 +29,7 @@ posteriormente enviada a um método da classe Notificator, que se encarrega de e
 
 ## Sobre a interface
 
-A interface desenvolvida aprenseta dois formulários: um de login e outro de registro. O primeiro formulário apresenta dados incorretos, que serão
+A interface desenvolvida apresenta dois formulários: um de login e outro de registro. O primeiro formulário apresenta dados incorretos, que serão
 negados pelo JavaScript e será exibida uma notificação com os campos incorretos, que terão a cor de suas bordas mudados para vermelho. O segundo apresenta dados corretos e será exibido um alert dizendo que a operação foi realizada com sucesso.
 
 Você também pode mudar os valores para testar mais o aplicativo (:
